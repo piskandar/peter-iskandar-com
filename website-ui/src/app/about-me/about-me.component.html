@@ -1,0 +1,125 @@
+
+<!--<div style="height: 570px;width: 100%;-->
+<!--  position: relative;">-->
+<!--  <div style="width: 100%;-->
+<!--  height: 100%;-->
+<!--  position: absolute;-->
+<!--  top: 0;-->
+<!--  left: 0;">-->
+<!--    <div style="background-image: url(../../assets/images/abouthero.jpg);background-repeat: no-repeat; width: 100%;-->
+<!--      height: 570px;background-size: cover;">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div  style="background-color: #221C005c; width: 100%;-->
+<!--        height: 100%;-->
+<!--        position: absolute;-->
+<!--        top: 0;-->
+<!--        left: 0;">-->
+
+<!--      <div class="hero-title">-->
+<!--        <span style="margin: 55px 0 0 35%;">About<br/>me</span>-->
+<!--      </div>-->
+
+<!--  </div>-->
+<!--</div>-->
+<div class="about-me">
+
+  <div class="left-section">
+    <div class="main-header">
+      <p class="header-text">Technical Skills</p>
+    </div>
+    <div class="divider-wrapper">
+      <div class="divider">
+      </div>
+    </div>
+    <div class="skill-wrapper">
+      <div class="skill-section">
+        <div class="sub-header">Languages</div>
+        <div class="skill-body">Java, C#, Kotlin, UNIX Shell Scripting, Objective-C, Swift, C++, Ruby</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">Web</div>
+        <div class="skill-body">Angular, React, CSS/Sass, Spring Framework</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">Mobile</div>
+        <div class="skill-body">Android, iOS</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">graphics</div>
+        <div class="skill-body">Adobe Photoshop, Sketch</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">Audio</div>
+        <div class="skill-body">Adobe Audition, Logic Pro X</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">CONTINUOUS <br/>INTEGRATIONS</div>
+        <div class="skill-body">Concourse, CircleCI, BuildKite, Jenkins</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">Cloud <br/>Technologies</div>
+        <div class="skill-body">Cloud Foundry, GCP, AWS, Heroku</div>
+      </div>
+      <div class="skill-section">
+        <div class="sub-header">METHODOLOGIES</div>
+        <div class="skill-body">Agile, Extreme Programming, Pair Programming</div>
+      </div>
+    </div>
+  </div>
+  <div class="right-section" style="display: none;">
+    <div class="keywords">
+
+      <div class="content">
+        <div>CREATIVE</div>
+        <div>ARTISTIC</div>
+        <div>INNOVATED</div>
+        <div>SELF MOTIVATED</div>
+        <div>TEAM LEADER</div>
+        <div>STRONG ANALYTICAL</div>
+        <div>QUICK LEARNER</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="about-me">
+
+  <div class="left-section">
+    <div class="main-header">
+      <p class="header-text" style="text-align: left">Work Experience</p>
+    </div>
+    <div class="divider-wrapper-right">
+      <div class="divider">
+      </div>
+    </div>
+    <div>
+
+      <app-company [company]="'VMware'"
+                   [startDate]="'FEBRUARY 2011'"
+                   [endDate]="'PRESENT'"
+                   [location]="'Toronto, ON'"></app-company>
+      <app-role-work-experience *ngFor="let roleExperience of workExperience1"
+                                [roleTitle]="roleExperience.roleTitle"
+                                [businessUnit]="roleExperience.businessUnit"
+                                [startDate]="roleExperience.startDate"
+                                [endDate]="roleExperience.endDate"
+                                [description]="roleExperience.description"></app-role-work-experience>
+      <app-company [company]="'TELUS Health Solutions'"
+                   [startDate]="'JUNE 2008'"
+                   [endDate]="'FEBRUARY 2011'"
+                   [location]="'MISSISSAUGA, ON'"></app-company>
+      <app-role-work-experience *ngFor="let roleExperience of workExperience2"
+                                [roleTitle]="roleExperience.roleTitle"
+                                [businessUnit]="roleExperience.businessUnit"
+                                [startDate]="roleExperience.startDate"
+                                [endDate]="roleExperience.endDate"
+                                [description]="roleExperience.description"></app-role-work-experience>
+
+    </div>
+  </div>
+  <div class="right-section">
+  </div>
+</div>
